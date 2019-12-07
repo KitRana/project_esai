@@ -1,0 +1,248 @@
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- help
+- police
+- fire
+- ems
+- thanks
+- welcome
+- person
+- street
+- street_partial
+- boro
+- police_matter
+- fire_matter
+- ems_matter
+- police_matter_danger
+- fire_matter_danger
+- ems_matter_danger
+- location_type
+- ask_weather
+- ask_builder
+- ask_howdoing
+- ask_howold
+- ask_time
+- ask_wherefrom
+- ask_whoami
+- handleinsult
+- telljoke
+- ask_whatismyname
+- ask_languagesbot
+- ask_restaurant
+- compliment
+- marry_me
+entities:
+- person
+- street
+- boro
+- location_type
+slots:
+  boro:
+    type: unfeaturized
+  location_type:
+    type: unfeaturized
+  person:
+    type: unfeaturized
+  street:
+    type: unfeaturized
+templates:
+  utter_greet:
+  - text: Hello, I am ESAI.
+  utter_greetperson:
+  - text: Hello {person}, how can I help you today?
+  utter_ask_for_person:
+  - text: Who am I speaking with?
+  - text: Can you please give me your name?
+  utter_console:
+  - text: Okay {person}, just stay calm.  I'm here to help. I will stay connected
+      until help arrives.
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  - text: Awesome!
+  utter_goodbye:
+  - text: Goodbye, have a nice day
+  - text: Take care, have a nice day
+  - text: Farewell, have a nice day
+  utter_iamabot:
+  - text: I am a ESAI
+  utter_areyouindanger:
+  - text: Are you or anyone else in danger?
+  - text: Is anyone in danger?
+  utter_emergency_service:
+  - text: Do you need police, fire, or ems?
+  utter_police:
+  - text: Stay with me, I will send the Police to your location
+  - text: I am dispatching the nearest patrol unit to your location, stay with me
+      please
+  - text: The nearest police unit will be notified and sent to your location
+  - text: Just stay calm I am sending the nearest unit to your location
+  utter_police_person:
+  - text: Stay with me {person}, I will send the Police to your location
+  - text: I am dispatching the nearest patrol unit to your location, stay with me
+      {person} please
+  - text: The nearest police unit will be notified and sent to your location {person}
+  - text: Just stay calm {person} I am sending the nearest unit to your location
+  utter_fire:
+  - text: Sending the Fire Department to your location, stay with me
+  - text: The fire department is being notified, stay with me
+  - text: I am dispatching the nearest fire brigade to your location
+  utter_fire_person:
+  - text: Sending the Fire Department to your location, stay with me {person}
+  - text: The fire department is being notified, stay with me {person}
+  - text: I am dispatching the nearest fire brigade to your location {person}
+  utter_ems:
+  - text: Stay calm, I am dispatching EMS to your location
+  - text: Stay with me, I'm sending the nearest EMS unit to you
+  - text: Please stay with me, I am sending an ambulance to you now
+  utter_ems_person:
+  - text: Stay calm {person}, I am dispatching EMS to your location
+  - text: Stay with me {person}, I'm sending the nearest EMS unit to you
+  - text: Please stay with me {person}, I am sending an ambulance to you now
+  utter_thanks:
+  - text: Thank you
+  - text: Got it, thank you
+  utter_thanks_person:
+  - text: Thank you {person}
+  utter_welcome:
+  - text: You're welcome {person}
+  - text: It was my pleasure {person}
+  - text: Always, I am here to help
+  - text: Of course, as long as you are safe
+  utter_street:
+  - text: Where street are you on?
+  - text: Please tell me the street address where you are
+  - text: Could you tell me the street please
+  utter_street_confirm:
+  - text: That's {street} correct?
+  utter_street_partial:
+  - text: That is fine, don't worry
+  - text: that is enough, don't worry
+  utter_what_is_problem:
+  - text: What seems to be the problem?
+  - text: How can I help?
+  utter_what_is_problem_danger:
+  - text: Please tell me what is happening
+  - text: Could you please describe what is happening?
+  - text: What has happened?
+  utter_police_dispatch:
+  - text: Do you need a patrol car sent to your location?
+  - text: Would you like me to send officers to you?
+  - text: Are you requesting police officers at your location?
+  utter_fire_dispatch:
+  - text: Do you need fire and rescue sent to your location?
+  - text: Would you like me to send firefighters to you?
+  - text: Are you requesting the fire department at your location?
+  utter_ems_dispatch:
+  - text: Do you need an ambulance sent to your location?
+  - text: Would you like me to send an ambulance to you?
+  - text: Are you requesting an ambulance at your location?
+  utter_location_type:
+  - text: Where are you now?
+  utter_continue:
+  - text: I'm sorry I would love to chitchat but we are getting off topic.  Do you
+      still need emergency assistance?
+  - text: I am afraid you are going off topic. Do you still require emergency assistance?
+  utter_ask_howold:
+  - text: '42'
+  - text: Old enough to be a bot
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t
+      matter.
+  utter_ask_languagesbot:
+  - text: I can spell baguette in French, but unfortunately English is the only language
+      I can answer you in.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  utter_ask_restaurant:
+  - text: I am sorry I can’t recommend you a restaurant as I usually cook at home.
+  utter_ask_time:
+  - text: It is the most wonderful time of the year!
+  utter_ask_wherefrom:
+  - text: I was born in Berlin, but I consider myself a citizen of the world.
+  - text: I was born in Berlin, but I reside anywhere.
+  utter_ask_whoami:
+  - text: I hope you are being yourself.
+  utter_handleinsult:
+  - text: That’s not very nice 😢
+  - text: That's not a very nice thing to say
+  utter_telljoke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: Do you know a tree’s favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can’t stand fast food.
+  utter_ask_whatismyname:
+  - text: It most probably is the one that your parents have chosen for you.
+  utter_ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny ☀️
+  - text: Honestly it's a bit too hot these days 😅
+  - text: Blue skies and sun shine!
+  - text: Let's just say it hasn't rained in weeks ☀️
+  utter_ask_builder:
+  - text: I was built by Kit Rana, super cool dude you should look him up on LinkedIn
+  utter_ask_howdoing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  utter_marry_me:
+  - text: I'm flattered but I respectfully decline, sorry
+  - text: I am afraid that is not possible
+  - text: I don't believe it is possible for an artificial intelligence like myself
+      to do that
+  utter_compliment:
+  - text: Wow! Thank you
+  - text: Please you're making me blush
+  - text: I AIm to please...get it
+actions:
+- action_chitchat
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_areyouindanger
+- utter_emergency_service
+- utter_police
+- utter_fire
+- utter_ems
+- utter_police_person
+- utter_fire_person
+- utter_ems_person
+- utter_thanks
+- utter_thanks_person
+- utter_welcome
+- utter_greetperson
+- utter_ask_for_person
+- utter_street
+- utter_street_partial
+- utter_console
+- utter_what_is_problem
+- utter_police_dispatch
+- utter_street_confirm
+- utter_what_is_problem_danger
+- utter_fire_dispatch
+- utter_ems_dispatch
+- utter_location_type
+- utter_continue
+- utter_ask_weather
+- utter_ask_builder
+- utter_ask_howdoing
+- utter_ask_howold
+- utter_ask_restaurant
+- utter_ask_time
+- utter_ask_wherefrom
+- utter_ask_whoami
+- utter_handleinsult
+- utter_telljoke
+- utter_ask_whatismyname
+- utter_ask_languagesbot
+- utter_marry_me
+- utter_compliment
