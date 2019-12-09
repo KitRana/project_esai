@@ -14,11 +14,20 @@ Project ESAI is an experiment in contextual AI.  The Emergency Service Artificia
 ESAI is built on a new open source AI framework called [Rasa].  While there are plenty of chatbots deployed these days, most use state-machines and are powered but pre-defined rules which are great until they need to be scaled.  Rasa uses a machine learning approach to dialogue management which allows users to have natural conversations with AI assistants.  The system uses NLU models for intent classification and entity extraction, which allows the computer to understand the actual context of the conversation rather than pre-programmed rules.  Machine learning models are also used to predict responses to the users.  This is the future of the AI assistant, and ESAI aims to bring these methods to triage emergency response.  
 
 ## Screenshots
-<img src="./screenshots/esai_response1.gif" width="auto" height="500" title= "police response 1" alt= "police response 1"/>
-<img src="./screenshots/esai_response2.gif" width="auto" height="500" title= "police response 2" alt= "police response 2"/>  
-<img src="./screenshots/esai_chitchat.gif" width="auto" height="500" title= "chitchat" alt= "chitchat"/>  
+<img src="./screenshots/esai_response1.gif" width="auto" height="450" title= "police response 1" alt= "police response 1"/>
+<img src="./screenshots/esai_response2.gif" width="auto" height="450" title= "police response 2" alt= "police response 2"/>  
+<img src="./screenshots/esai_chitchat.gif" width="auto" height="450" title= "chitchat" alt= "chitchat"/>  
 
-# 
+## Future Updates
+* Docker server deployment - the system can then be accessed from anywhere
+* Custom Actions  
+    * Retrieve emergency reponse facility locations
+    * Ask user for location with a browser prompt (ie. `navigator.geolocation.getCurrentPosition()`)
+    * Conversation clear button
+    * Image upload button
+    * Display images in window
+
+
 ## Sources
 The websocket chat widget featured in the screenshots is sourced from [Rasa Webchat].  
 Additional testing is being done with [Chatroom] and [Chatbot-Widget].  
