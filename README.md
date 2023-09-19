@@ -1,12 +1,5 @@
 # Project ESAI  
-<!-- forthebadge -->
-![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)
-![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)
-![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)  
-[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)    
-### And so much more!
+
 
 ## About
 Project ESAI is an experiment in contextual AI.  The Emergency Service Artificial Intelligence (ESAI) system aims to provide chat and voice based assistance to emergency response situations.  The system would act as a supplement to current 911 operations.  ESAI would be the first line of connection for people seeking emergency assistance through a web or mobile application.  ESAI would connect to a user, ask what type of emergency service is needed (ie. police, fire, or ems) and 
